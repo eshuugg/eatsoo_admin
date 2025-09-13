@@ -1,0 +1,79 @@
+/* Background and Container Styling */
+.login-container {
+    background: linear-gradient(135deg, #f8a540, #ff6f61); /* Gradient background */
+    padding: 20px;
+  }
+  
+  /* Card Styling */
+  .login-card {
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  /* Logo Styling */
+  .login-logo {
+    width: 150px; /* Adjust logo size */
+    height: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Title Styling */
+  .login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+  }
+  
+  /* Form Input Styling */
+  .form-input {
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    padding: 12px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+  .form-input:focus {
+    border-color: #f8a540; /* Highlight input border on focus */
+    box-shadow: 0 0 8px rgba(248, 165, 64, 0.5); /* Soft glow effect */
+  }
+  
+  /* Button Styling */
+  .login-button {
+    background-color: #f8a540; /* Primary button color */
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #e6953a; /* Darker shade on hover */
+  }
+  
+  .login-button:active {
+    background-color: #d48530; /* Even darker shade on click */
+  }
+  
+  /* Additional Links Styling */
+  .text-muted {
+    color: #666 !important; /* Muted text color */
+  }
+  
+  .text-muted a {
+    color: #f8a540; /* Link color */
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .text-muted a:hover {
+    text-decoration: underline;
+  }
