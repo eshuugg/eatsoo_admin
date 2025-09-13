@@ -95,7 +95,7 @@ const Customer = () => {
 
   // Format phone number
   const formatPhone = (phone) => {
-    return phone ? `+${phone}` : 'N/A';
+    return phone ? `+91${phone}` : 'N/A';
   };
 
   // Format date
@@ -121,7 +121,7 @@ const Customer = () => {
       <Container className="mt-4">
         <Row className="mb-4">
           <Col>
-            <h1>Customers Users</h1>
+            <h1>Customers Management</h1>
             <p className="text-muted">
               Manage customer users in the system
             </p>

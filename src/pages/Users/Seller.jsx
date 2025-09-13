@@ -173,7 +173,7 @@ const Seller = () => {
 
   // Format phone number
   const formatPhone = (phone) => {
-    return phone ? `+${phone}` : 'N/A';
+    return phone ? `+91${phone}` : 'N/A';
   };
 
   // Format date

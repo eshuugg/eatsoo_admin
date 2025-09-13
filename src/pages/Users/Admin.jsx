@@ -99,7 +99,7 @@ const Admin = () => {
 
   // Format phone number
   const formatPhone = (phone) => {
-    return phone ? `+${phone}` : 'N/A';
+    return phone ? `+91${phone}` : 'N/A';
   };
 
   // Format date
@@ -127,7 +127,7 @@ const Admin = () => {
       <Container className="mt-4">
         <Row className="mb-4">
           <Col>
-            <h1>Admin Users</h1>
+            <h1>Admin Management</h1>
             <p className="text-muted">
               Manage admin users in the system
             </p>

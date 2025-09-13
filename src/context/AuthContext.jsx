@@ -9,7 +9,8 @@ export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [token, setToken] = useState(null);
   const [userRole, setUserRole] = useState(null);
-  const dispatch = useDispatch(); // Use Redux dispatch
+  const [loading, setLoading] = useState(true); // Add loading state
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const storedToken = Cookies.get("token");
@@ -20,6 +21,7 @@ export const AuthProvider = ({ children }) => {
       setUserRole(storedRole);
       setIsAuthenticated(true);
     }
+    setLoading(false); // Set loading to false after checking auth
   }, []);
 
   // Login function
@@ -38,11 +40,18 @@ export const AuthProvider = ({ children }) => {
     setToken(null);
     setUserRole(null);
     setIsAuthenticated(false);
-    dispatch(userLogout()); // Dispatch Redux logout action to reset state
+    dispatch(userLogout());
   };
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, token, userRole, login, logout }}>
+    <AuthContext.Provider value={{ 
+      isAuthenticated, 
+      token, 
+      userRole, 
+      login, 
+      logout,
+      loading // Expose loading state
+    }}>
       {children}
     </AuthContext.Provider>
   );

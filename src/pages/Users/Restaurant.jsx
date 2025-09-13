@@ -95,7 +95,7 @@ const Restaurant = () => {
 
   // Format phone number
   const formatPhone = (phone) => {
-    return phone ? `+${phone}` : 'N/A';
+    return phone ? `+91${phone}` : 'N/A';
   };
 
   // Format date
@@ -121,7 +121,7 @@ const Restaurant = () => {
       <Container className="mt-4">
         <Row className="mb-4">
           <Col>
-            <h1>Customers Restaurant</h1>
+            <h1>Restaurant Management</h1>
             <p className="text-muted">
               Manage restaurant users in the system
             </p>
@@ -146,7 +146,7 @@ const Restaurant = () => {
               onClick={() => setShowCreateModal(true)}
               className="me-2"
             >
-              + Add Customer User
+              + Add Restaurant User
             </Button>
             <Badge bg="primary" className="p-2">
               Total: {roleUserData?.data?.users?.length || 0} users
